@@ -1,0 +1,17 @@
+{
+ "type": "postgres",
+ "host": "localhost",
+ "port": "5432",
+ "username": "postgres",
+ "password": "docker",
+ "database": "kaiju_db",
+ "entities":[
+   "./src/modules/**/infra/typeorm/entities/*.ts"
+  ],
+ "migration":[
+   "./src/infra/typeorm/migrations/*.ts"
+],
+"cli": {
+  "migrationsDir":"./src/infra/typeorm/migrations"
+}
+}
